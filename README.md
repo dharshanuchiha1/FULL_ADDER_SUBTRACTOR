@@ -1,5 +1,5 @@
 # FULL_ADDER_SUBTRACTOR
-
+**DATE : 04/12/2025**
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
 **AIM:**
@@ -43,17 +43,105 @@ Borrow out = A'Bin + A'B + BBin
 Write the detailed procedure here
 
 **Program:**
+```
+module full_adder (
+    input  wire a, b, cin,   // Inputs
+    output wire sum, carry   // Outputs
+);
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+    // Logic equations
+    assign sum   = a ^ b ^ cin;                  // XOR for sum
+    assign carry = (a & b) | (b & cin) | (a & cin); // Majority function for carry
+
+endmodule
+```
+
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
+
+Developed by: DHARSHAN G
+RegisterNumber: 25016421
 */
+
+
+**Output Timing Waveform**
+
+<img width="943" height="588" alt="Screenshot 2025-12-04 161355" src="https://github.com/user-attachments/assets/243b98a3-d20d-459e-b5b8-a57e69f971e2" />
 
 **RTL Schematic**
 
-**Output Timing Waveform**
+<img width="1254" height="202" alt="Screenshot 2025-12-04 161645" src="https://github.com/user-attachments/assets/facb4b6e-43f5-4297-a923-1b05c7e90a18" />
 
 **Result:**
 
 Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
 
 
+.
+..
+
+..
+.
+.
+.
+..
+.
+.
+.
+.
+..
+.
+.
+..
+.
+..
+.
+.
+..
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+..
+
+.
+
+.
+.
+.
 
