@@ -1,5 +1,7 @@
 # FULL_ADDER_SUBTRACTOR
 
+**DATE : 05/12/2025**
+
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
 **AIM:**
@@ -44,12 +46,65 @@ Write the detailed procedure here
 
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+Full Adder
+-------------------------------------
+// Full Adder in Verilog
+```
+module full_adder (
+    input  wire a, b, cin,   // Inputs
+    output wire sum, carry   // Outputs
+);
+
+    // Logic equations
+    assign sum   = a ^ b ^ cin;                  // XOR for sum
+    assign carry = (a & b) | (b & cin) | (a & cin); // Majority function for carry
+
+endmodule
+```
+
+Full Sub
+-------------------------------------
+// Full Subtractor in Verilog
+```
+module full_subtractor (
+    input  wire a, b, bin,       // Inputs
+    output wire diff, borrow     // Outputs
+);
+
+    // Logic equations
+    assign diff   = a ^ b ^ bin;                  // Difference
+    assign borrow = (~a & b) | (~(a ^ b) & bin);  // Borrow logic
+
+endmodule
+```
+
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
+Developed by: DHARSHAN G
+RegisterNumber: 25016421
 */
 
 **RTL Schematic**
+Full Adder
+-------------------------------------
+
+<img width="943" height="588" alt="Screenshot 2025-12-04 161355" src="https://github.com/user-attachments/assets/929f8b57-2409-451a-92d6-0a523ffcff16" />
+
+
+Full Sub
+-------------------------------------
+<img width="913" height="350" alt="Screenshot 2025-12-05 132932" src="https://github.com/user-attachments/assets/2025626b-01ff-4876-ace0-e43a524c8512" />
+
 
 **Output Timing Waveform**
+Full Adder
+-------------------------------------
+
+<img width="1254" height="202" alt="Screenshot 2025-12-04 161645" src="https://github.com/user-attachments/assets/c51c1516-3d9d-4d09-8ab6-bfe59a2f0a34" />
+
+Full Sub
+-------------------------------------
+
+<img width="1140" height="196" alt="Screenshot 2025-12-05 132916" src="https://github.com/user-attachments/assets/def3f30e-8e95-4dcc-b47e-4d0338fd3498" />
 
 **Result:**
 
