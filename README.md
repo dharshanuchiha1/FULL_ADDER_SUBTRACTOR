@@ -84,6 +84,7 @@ RegisterNumber: 25016421
 */
 
 **RTL Schematic**
+
 Full Adder
 -------------------------------------
 
@@ -96,6 +97,7 @@ Full Sub
 
 
 **Output Timing Waveform**
+
 Full Adder
 -------------------------------------
 
